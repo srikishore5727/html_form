@@ -1,0 +1,50 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="https://mail.google.com/" method="POST" enctype="text/plain">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="rating">Rate our website:</label>
+        <select id="rating" name="rating">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label>Subscribe to our newsletter:</label><br>
+        <input type="radio" id="subscribe-yes" name="subscribe" value="yes">
+        <label for="subscribe-yes">Yes</label>
+        <input type="radio" id="subscribe-no" name="subscribe" value="no">
+        <label for="subscribe-no">No</label><br><br>
+
+        <label>Select your favorite color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
